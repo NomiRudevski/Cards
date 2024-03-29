@@ -16,11 +16,11 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 13px 15px;
+    margin: auto;
     text-decoration: none;
     font-size: 75%;
 }
 
-a:hover{
+a: hover{
     color: #d2ffd9;
 }
