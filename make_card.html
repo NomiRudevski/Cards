@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your own card!</title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+
+</style>
+<body>
+    <nav style="position: sticky; top:0; ">
+        <ul class="menu">
+            <p style="position: sticky; top:0; float: left;padding: 10px; margin: 0; color: white;font-weight: bold;">MAKE A CARD</p> 
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="make_card.html">MAKE CARD</a></li>
+            <li><a href="login_form.html">LOG IN</a></li>
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+    </nav>
+
+    <label for="userInput">Enter Text:</label>
+<input type="text" id="userInput">
+<button onclick="submitInput()">Submit</button>
+
+<div id="displayArea"></div>
+
+<script>
+function submitInput() {
+    
+    var paragraph = document.createElement("p");
+    
+    paragraph.textContent = document.getElementById("userInput").value;
+
+    var displayArea = document.getElementById("displayArea");
+
+    displayArea.appendChild(paragraph);
+}
+</script>
+
+    
+</body>
+
+</html>
