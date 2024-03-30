@@ -16,7 +16,7 @@
 <body>
     <nav style="position: sticky; top:0; ">
         <ul class="menu">
-            <p style="position: sticky; top:0; float: left;padding: 10px; margin: 0; color: white;font-weight: bold;">
+            <p style="position: sticky; top:0; float: left; margin: 10px; color: white;font-weight: bold;">
                 MAKE A CARD</p>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="make_card.html">MAKE CARD</a></li>
@@ -25,26 +25,40 @@
         </ul>
     </nav>
     <br>
-    <div class="textbox">
-        <label for="userInput" class="text-main-in-page">Write your greeting:</label><br><br>
-        <textarea id="userInput"
-            style=" width: 95%px ; height: 100px;max-width: 95%; max-height: 50%;font-family: Arial, Helvetica, sans-serif;">Write your greeting!</textarea><br><br>
-        <button onclick="submitInput()">Submit</button>
+
+    <form style="float: left;">
+        <div style="padding: 10px;">
+        <label for="userInput">Write your title:</label><br><br>
+        <input id="userInput" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px;width: 150px;"
+            value="Your title!"><br>
+        <button type="button" onclick="submitTitle()" style="background-color: #4d8355; color :#ffffff;">Submit title</button>
     </div>
 
+    <div style="padding: 10px;">
+        <label for="userGreet">Write your greeting:</label><br><br>
+        <textarea id="userGreet" maxlength="200" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px; width: 150px;"
+            value="Your title!">Your greeting!</textarea><br>
+        <button type="button" onclick="submitGreet()" style="background-color: #4d8355; color :#ffffff;">Submit title</button>
+    </div>
 
-    <div class="card" id="displayArea"></div>
+    </form>
+    
+
+    <div id="background" class="card-background-ballon">
+        <div id="title" class="card-text-title">Title!</div>
+        <div id="greet" class="card-text-greet">Greeting!</div>
+    </div>
 
     <script>
-        function submitInput() {
-            var displayArea = document.getElementById("displayArea");
-            if (displayArea.childElementCount == 0) {
-                var paragraph = document.createElement("p");
-                paragraph.textContent = document.getElementById("userInput").value;
-                displayArea.appendChild(paragraph);
-            } else {
-                displayArea.firstChild.textContent = document.getElementById("userInput").value
-            }
+        function submitTitle() {
+            
+            var displayArea = document.getElementById("title");
+            displayArea.lastChild.textContent = document.getElementById("userInput").value
+        }
+
+        function submitGreet() {
+            var displayArea = document.getElementById("greet");
+            displayArea.lastChild.textContent = document.getElementById("userGreet").value
         }
     </script>
 

@@ -30,12 +30,11 @@ body {
     border-bottom: 1px solid #3f6a45;
 }
 
+/* style for card, intup text, and main text in page- HALP
 .textbox {
-    float: top;
+    float:left;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 75%;
+    width: 48%;
     height: 250px;
     text-align: center;
     background-color: #f9ffff;
@@ -44,18 +43,16 @@ body {
 
 }
 
-.card {
-    align-self: center;
-    float: bottom;
+.card_a{
+    float:right;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 75%;
+    width: 48%;
     height: 250px;
     text-align: center;
     background-color: #f9ffff;
     border: 3px solid #4d8355;
     border-radius: 8px;
+    overflow: auto;
 }
 
 .text-main-in-page {
@@ -63,18 +60,16 @@ body {
     font-weight: bold;
     color: #4d8355;
 }
-
-li {
-    float: right;
-}
+*/
 
 li a {
+    float: right;
     display: block;
     color: white;
     text-align: center;
     padding: 13px 10px;
     text-decoration: none;
-    font-size: 75%;
+    font-size: 70%;
 }
 
 .a {
@@ -89,3 +84,34 @@ a:hover {
 a:active {
     color: #d2ffd9;
 }
+
+.card-background-ballon {
+    margin: auto;
+    width: 450px;
+    height: 350px;
+    background-color: #9ea0a0;
+    background-image: url(image/ballons.jpg);
+    text-align: center;
+    padding: 10px;
+    border: 5px solid #000000;
+    
+
+}
+
+.card-text-title {
+    color: #ffffff;
+    font-weight: bolder;
+    text-shadow: 0px 0px 5px #272a27;
+    font-size: 200%;
+    padding: 15px;
+    margin: 5px;
+}
+
+.card-text-greet {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #484e49;
+    font-size: 175%;
+    padding: 10px;
+}
+
