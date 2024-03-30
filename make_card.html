@@ -26,24 +26,27 @@
     </nav>
     <br>
 
-    <form style="float: left;">
+    <form class="form">
         <div style="padding: 10px;">
-        <label for="userInput">Write your title:</label><br><br>
-        <input id="userInput" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px;width: 150px;"
-            value="Your title!"><br>
-        <button type="button" onclick="submitTitle()" style="background-color: #4d8355; color :#ffffff;">Submit title</button>
-    </div>
+            <label for="userInput">Write your title:</label><br><br>
+            <input id="userInput" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px;width: 150px;"
+                value="Your title!"><br>
+            <button type="button" onclick="submitTitle()" style="background-color: #4d8355; color :#ffffff;">Submit
+                title</button>
+        </div>
 
-    <div style="padding: 10px;">
-        <label for="userGreet">Write your greeting:</label><br><br>
-        <textarea id="userGreet" maxlength="200" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px; width: 150px;"
-            value="Your title!">Your greeting!</textarea><br>
-        <button type="button" onclick="submitGreet()" style="background-color: #4d8355; color :#ffffff;">Submit title</button>
-    </div>
+        <div style="padding: 10px;">
+            <label for="userGreet">Write your greeting:</label><br><br>
+            <textarea id="userGreet" maxlength="200"
+                style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px; width: 150px;"
+                value="Your title!">Your greeting!</textarea><br>
+            <button type="button" onclick="submitGreet()" style="background-color: #4d8355; color :#ffffff;">Submit
+                title</button><br>
+        </div>
 
     </form>
-    
 
+    
     <div id="background" class="card-background-ballon">
         <div id="title" class="card-text-title">Title!</div>
         <div id="greet" class="card-text-greet">Greeting!</div>
@@ -51,7 +54,7 @@
 
     <script>
         function submitTitle() {
-            
+
             var displayArea = document.getElementById("title");
             displayArea.lastChild.textContent = document.getElementById("userInput").value
         }

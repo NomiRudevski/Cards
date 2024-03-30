@@ -30,38 +30,6 @@ body {
     border-bottom: 1px solid #3f6a45;
 }
 
-/* style for card, intup text, and main text in page- HALP
-.textbox {
-    float:left;
-    margin: auto;
-    width: 48%;
-    height: 250px;
-    text-align: center;
-    background-color: #f9ffff;
-    border: 3px solid #4d8355;
-    border-radius: 8px;
-
-}
-
-.card_a{
-    float:right;
-    margin: auto;
-    width: 48%;
-    height: 250px;
-    text-align: center;
-    background-color: #f9ffff;
-    border: 3px solid #4d8355;
-    border-radius: 8px;
-    overflow: auto;
-}
-
-.text-main-in-page {
-    font-size: 125%;
-    font-weight: bold;
-    color: #4d8355;
-}
-*/
-
 li a {
     float: right;
     display: block;
@@ -85,18 +53,10 @@ a:active {
     color: #d2ffd9;
 }
 
-.card-background-ballon {
-    margin: auto;
-    width: 450px;
-    height: 350px;
-    background-color: #9ea0a0;
-    background-image: url(image/ballons.jpg);
-    text-align: center;
-    padding: 10px;
-    border: 5px solid #000000;
+
     
 
-}
+
 
 .card-text-title {
     color: #ffffff;
@@ -115,3 +75,35 @@ a:active {
     padding: 10px;
 }
 
+@media only screen and (min-width: 815px) {
+    .form{
+        float: left;
+    }
+
+    .card-background-ballon{
+        margin: auto;
+        width: 450px;
+        height: 350px;
+        background-color: #9ea0a0;
+        background-image: url(image/ballons.jpg);
+        text-align: center;
+        padding: 10px;
+        border: 5px solid #000000;
+    }
+}
+
+@media only screen and (max-width: 815px){
+    .form{
+        margin: auto;
+    }
+    .card-background-ballon {
+        margin: auto;
+        width: 450px;
+        height: 350px;
+        background-color: #9ea0a0;
+        background-image: url(image/ballons.jpg);
+        text-align: center;
+        padding: 10px;
+        border: 5px solid #000000;
+}
+}
