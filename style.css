@@ -98,7 +98,7 @@ a:active {
     }
     .card-background-ballon {
         margin: auto;
-        width: 450px;
+        width: 90%;
         height: 350px;
         background-color: #9ea0a0;
         background-image: url(image/ballons.jpg);
