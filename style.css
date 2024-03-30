@@ -1,17 +1,74 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
 }
+
+.header {
+
+    margin: 0;
+    padding: 100px;
+    background-color: #3f6a45;
+    color: #ffffff;
+    text-align: center;
+    font-size: 125%;
+    text-shadow: 1px 1px 2px #484e49;
+}
+
+.header_link {
+    font-size: 100%;
+    color: #ffffff;
+
+
+}
+
 .menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #4d8355;
+    border-bottom: 1px solid #3f6a45;
 }
-li{
+
+.textbox {
+    float: top;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    width: 75%;
+    height: 250px;
+    text-align: center;
+    background-color: #f9ffff;
+    border: 3px solid #4d8355;
+    border-radius: 8px;
+
+}
+
+.card {
+    float: bottom;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    width: 75%;
+    height: 250px;
+    text-align: center;
+    background-color: #f9ffff;
+    border: 3px solid #4d8355;
+    border-radius: 8px;
+}
+
+.text-main-in-page {
+    font-size: 125%;
+    font-weight: bold;
+    color: #4d8355;
+}
+
+li {
     float: right;
 }
+
 li a {
     display: block;
     color: white;
@@ -21,6 +78,15 @@ li a {
     font-size: 75%;
 }
 
-a: hover{
+.a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d2ffd9;
+}
+
+a:active {
     color: #d2ffd9;
 }
