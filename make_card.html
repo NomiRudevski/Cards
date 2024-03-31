@@ -43,14 +43,29 @@
             <button type="button" onclick="submitGreet()" style="background-color: #4d8355; color :#ffffff;">Submit
                 title</button><br>
         </div>
-
+        <span style="padding: 10px;">choose your theme:</span>
+        <table style="padding: 10px;">
+            <tr>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-ballon">Balloons</button></th>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-flower" >Flowers</button></th>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-frog">Frogs</button></th>
+            </tr>
+            <tr>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-bird">Birds</button></th>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-cats">Cats</button></th>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-space">Space</button></th>
+            </tr>
+        </table>
     </form>
 
-    
+
+
     <div id="background" class="card-background-ballon">
         <div id="title" class="card-text-title">Title!</div>
         <div id="greet" class="card-text-greet">Greeting!</div>
     </div>
+
+
 
     <script>
         function submitTitle() {
@@ -62,6 +77,11 @@
         function submitGreet() {
             var displayArea = document.getElementById("greet");
             displayArea.lastChild.textContent = document.getElementById("userGreet").value
+        }
+
+        function changeTheme(element)
+        {
+            document.getElementById("background").className = element.value;
         }
     </script>
 
