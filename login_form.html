@@ -9,22 +9,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    
+
 
 </style>
+
 <body>
     <nav style="position: sticky; top:0; ">
         <ul class="menu">
-            <p style="position: sticky; top:0; float: left;padding: 10px; margin: 0; color: white;font-weight: bold;">MAKE A CARD</p> 
-            <li><a href="about.html">ABOUT</a></li>
+            <p style="position: sticky; top:0; float: left;padding: 10px; margin: 0; color: white;font-weight: bold;">
+                MAKE A CARD</p>
             <li><a href="make_card.html">MAKE CARD</a></li>
             <li><a href="login_form.html">LOG IN</a></li>
             <li><a href="index.html">HOME</a></li>
         </ul>
     </nav>
 
-    
-    
+    <div class="header">
+        <h3>You can log in to save your cards!</h3>
+    <span>*this feature isn't currently active</span><br>
+    <button type="button" id="b1" style="visibility: visible;" class="form-button" onclick=show()>Understood - show me
+        the form</button>
+    <button type="button" id="b2" style="visibility:hidden ;" class="form-button" onclick=hide()>Regret - hide the
+        form</button>
+    </div>
+    <br>
+
+    <form action="get" id="login" class="LG">
+        <p class="main-text">LOG IN FORM</p>
+        <input type="text" name="fname" class="lg-input" placeholder="First name" required><br>
+        <input type="text" name="lname" class="lg-input" placeholder="Last name" required><br>
+        <input type="number" name="date" class="lg-input" min="16" max="99" placeholder="Age" required><br>
+        <input type="email" name="email" class="lg-input" placeholder="Email" required><br>
+        <input type="password" name="password" class="lg-input" placeholder="Password" required><br><br>
+        <input type="submit" style="color: #ffffff; background-color: #4d8355;"><br><br>
+    </form>
+
+
 </body>
+
+
+<script>
+    function show() {
+        document.getElementById("login").style.visibility = "visible";
+        document.getElementById("b1").style.visibility = "hidden";
+        document.getElementById("b2").style.visibility = "visible";
+    }
+
+    function hide() {
+        document.getElementById("login").style.visibility = "hidden";
+        document.getElementById("b1").style.visibility = "visible";
+        document.getElementById("b2").style.visibility = "hidden";
+    }
+
+
+
+</script>
 
 </html>
