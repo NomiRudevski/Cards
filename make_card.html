@@ -28,41 +28,56 @@
 
     <form class="form">
         <div style="padding: 10px;">
-            <label for="userInput">Write your title:</label><br><br>
-            <input id="userInput" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px;width: 150px;"
+            <label for="userInput">Write your title:</label><br>
+            <input id="userInput" style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px;width: 200px;"
                 value="Your title!"><br>
             <button type="button" onclick="submitTitle()" style="background-color: #4d8355; color :#ffffff;">Submit
                 title</button>
         </div>
 
         <div style="padding: 10px;">
-            <label for="userGreet">Write your greeting:</label><br><br>
+            <label for="userGreet">Write your greeting:</label><br>
             <textarea id="userGreet" maxlength="200"
-                style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px; width: 150px;"
+                style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px; width: 200px;"
                 value="Your title!">Your greeting!</textarea><br>
             <button type="button" onclick="submitGreet()" style="background-color: #4d8355; color :#ffffff;">Submit
-                title</button><br>
+                greeting</button><br>
         </div>
-        <span style="padding: 10px;">choose your theme:</span>
-        <table style="padding: 10px;">
+        <span style="padding: 10px;">Choose your theme:</span>
+        <table style="padding-left: 8px; padding-bottom: 10px;">
             <tr>
-                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-ballon">Balloons</button></th>
-                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-flower" >Flowers</button></th>
-                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-frog">Frogs</button></th>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)"
+                        value="card-background-ballon">Balloons</button></th>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)"
+                        value="card-background-flower">Flowers</button></th>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)"
+                        value="card-background-frog">Frogs</button></th>
             </tr>
             <tr>
-                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-bird">Birds</button></th>
-                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-cats">Cats</button></th>
-                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)" value ="card-background-space">Space</button></th>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)"
+                        value="card-background-bird">Birds</button></th>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)"
+                        value="card-background-cats">Cats</button></th>
+                <th> <button type="button" class="theam_botten" onclick="changeTheme(this)"
+                        value="card-background-space">Space</button></th>
             </tr>
         </table>
+
+        <div style="padding: 10px;">
+            <label for="title-color">Change title color:</label>
+            <input type="color" name="title-color" id="title-color" value="#ffffff" style="width: 71px;"
+                oninput="changeTitleColor(this.value)"><br><br>
+            <label for="text-color">Change text color:</label>
+            <input type="color" name="text-color" id="text-color" value="#ffffff" style="width: 70px;"
+                oninput="changeTextColor(this.value)">
+        </div>
     </form>
 
 
 
     <div id="background" class="card-background-ballon">
-        <div id="title" class="card-text-title">Title!</div>
-        <div id="greet" class="card-text-greet">Greeting!</div>
+        <div style="color: #ffffff;" id="title" class="card-text-title">Title!</div>
+        <div style="color: #ffffff;" id="greet" class="card-text-greet">Greeting!</div>
     </div>
 
 
@@ -79,9 +94,16 @@
             displayArea.lastChild.textContent = document.getElementById("userGreet").value
         }
 
-        function changeTheme(element)
-        {
+        function changeTheme(element) {
             document.getElementById("background").className = element.value;
+        }
+
+        function changeTitleColor(color) {
+            document.getElementById("title").style.color = color;
+        }
+
+        function changeTextColor(color) {
+            document.getElementById("greet").style.color = color;
         }
     </script>
 
