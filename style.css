@@ -76,25 +76,26 @@ a:active {
     padding: 2px;
 }
 
-.LG{
+.LG {
     visibility: hidden;
-    margin:auto;
+    margin: auto;
     text-align: center;
     background-color: #cde1d0;
     width: 50%;
     border: 2px solid #484e49;
-    border-radius: 4px; 
+    border-radius: 4px;
 }
 
-.main-text{
+.main-text {
     font-weight: bolder;
-    color:#3f6a45;
+    color: #3f6a45;
 }
 
-.lg-input{
+.lg-input {
     margin: 5px;
     width: 60%;
 }
+
 .form-button {
     margin-left: auto;
     margin-right: auto;
@@ -109,7 +110,7 @@ a:active {
 
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 950px) {
     .form {
         float: left;
         padding: 15px;
@@ -160,7 +161,7 @@ a:active {
         margin: auto;
         width: 450px;
         height: 350px;
-        background-image: url(image/cats.avif);
+        background-image: url(image/cats2.jpg);
         text-align: center;
         padding: 10px;
         border: 5px solid #000000;
@@ -177,7 +178,7 @@ a:active {
     }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 950px) {
     .form {
         margin: auto;
         padding: 15px;
@@ -227,7 +228,7 @@ a:active {
         margin: auto;
         width: 450px;
         height: 350px;
-        background-image: url(image/cats.avif);
+        background-image: url(image/cats2.jpg);
         text-align: center;
         padding: 10px;
         border: 5px solid #000000;
@@ -294,7 +295,7 @@ a:active {
         margin: auto;
         width: 90%;
         height: 350px;
-        background-image: url(image/cats.avif);
+        background-image: url(image/cats2.jpg);
         text-align: center;
         padding: 10px;
         border: 5px solid #000000;
